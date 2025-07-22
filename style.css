@@ -1,0 +1,108 @@
+/* === Base Styles === */
+body {
+  margin: 0;
+  background-color: #000; /* Default to dark theme (space feel) */
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent scrollbars for full immersive canvas */
+}
+
+/* === Control Panel (left side) === */
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1; /* Ensure it stays above the canvas */
+  max-height: 90vh;
+  overflow-y: auto; /* Scrollable if too many sliders */
+  max-width: 250px;
+  transition: transform 0.3s ease; /* Smooth collapse/expand */
+}
+
+/* Labels for slider inputs */
+label {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Sliders should stretch to full width of panel */
+input[type="range"] {
+  width: 100%;
+}
+
+/* Button base styling */
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #fff; /* White background to stand out */
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for all buttons */
+button:hover {
+  background: #ddd;
+}
+
+/* Tooltip that appears near cursor */
+.tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  pointer-events: none; /* Don't block mouse input */
+  display: none;
+  font-size: 12px;
+}
+
+/* Info panel that appears on right side */
+.info-panel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 200px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Floating labels above planets */
+.label3d {
+  color: white;
+  font-size: 12px;
+  pointer-events: none; /* Don't interfere with clicks */
+}
+
+/* Used when collapsing the side panel */
+.hidden {
+  transform: translateX(-110%);
+}
+
+/* === Responsive Tweaks for Mobile Devices === */
+@media (max-width: 768px) {
+  #controls {
+    top: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 50vh;
+    max-width: 90vw;
+  }
+
+  .info-panel {
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+    width: 90vw;
+    max-width: 300px;
+  }
+}
