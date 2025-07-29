@@ -1,4 +1,4 @@
-# 3D Solar System Simulation – Frontend Developer Assignment
+# 3D Solar System Simulation
 
 This project is an interactive 3D simulation of the solar system built using Three.js. It showcases realistic planetary orbits, lighting, and responsive user controls. The project was developed using pure JavaScript without any CSS animations and is fully responsive across modern browsers and devices.
 
@@ -81,5 +81,4 @@ solar-system/
 ## Developed By
 
 Rakshitha  
-Frontend Developer Enthusiast  
 GitHub: [https://github.com/rakshishetty-2004](https://github.com/rakshishetty-2004)
