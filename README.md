@@ -6,7 +6,7 @@ This project is an interactive 3D simulation of the solar system built using Thr
 
 ## Deployed Project
 
-Demo_video:[https://drive.google.com/file/d/1pzzdExxNwSytK4oP_Gi_ZMhuX3fn76EF/view?usp=drive_link](https://drive.google.com/file/d/1pzzdExxNwSytK4oP_Gi_ZMhuX3fn76EF/view?usp=drive_link)
+Demo_video:https://drive.google.com/file/d/1L-pBW1d3CvRcOQAub9YTs5RRCLWI2wJ_/view?usp=drive_link
 
 Live Website: [https://solar-system-rakshitha.netlify.app](https://solar-system-rakshitha.netlify.app)
 
